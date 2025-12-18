@@ -1,0 +1,13 @@
+<section>
+  <h2>Books</h2>
+
+  <ul class="list">
+    <li *ngFor="let book of filtered" class="list-item">
+      <div>
+        <a [routerLink]="['/books', book.id]">{{ book.title }}</a>
+        <a [routerLink]="['/books', book.id]" class="icon">🔍</a>
+        <div class="meta">{{ book.year }} • {{ book.genre }}</div>
+      </div>
+    </li>
+  </ul>
+</section>

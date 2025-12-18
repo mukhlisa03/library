@@ -1,0 +1,17 @@
+<section *ngIf="book">
+  <h2>{{ book.title }}</h2>
+  <p class="muted">Published: {{ book.year || 'N/A' }} • Publisher: {{ book.publisher || 'N/A' }} • Genre: {{ book.genre || 'N/A' }}</p>
+
+  <div class="content">
+    <p>{{ book.description }}</p>
+
+    <p>Author:
+      <a *ngIf="author" [routerLink]="['/authors', author.id]">{{ author.name }}</a>
+      <span *ngIf="!author">Unknown</span>
+    </p>
+  </div>
+
+  <div class="back">
+    <a routerLink="/books">← Back to books</a>
+  </div>
+</section>

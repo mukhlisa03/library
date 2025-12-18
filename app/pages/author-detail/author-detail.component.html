@@ -1,0 +1,19 @@
+<section *ngIf="author">
+  <h2>{{ author.name }}</h2>
+  <p class="muted">Nationality: {{ author.nationality || 'N/A' }} • Born: {{ author.birthYear || 'N/A' }}</p>
+
+  <div class="content">
+    <p>{{ author.bio }}</p>
+
+    <h3>Books by {{ author.name }}</h3>
+    <ul>
+      <li *ngFor="let b of books">
+        <a [routerLink]="['/books', b.id]">{{ b.title }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="back">
+    <a routerLink="/authors">← Back to authors</a>
+  </div>
+</section>

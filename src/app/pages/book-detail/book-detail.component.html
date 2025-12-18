@@ -1,0 +1,17 @@
+<div class="book-detail-container" *ngIf="book">
+  <a routerLink="/books" class="back-link">← Back to Books</a>
+  <h1>{{ book.title }}</h1>
+  <div class="book-info">
+    <div class="info-item">
+      <strong>Author:</strong>
+      <a routerLink="/authors" class="author-link">{{ book.author }}</a>
+    </div>
+    <div class="info-item">
+      <strong>ISBN:</strong> {{ book.isbn }}
+    </div>
+  </div>
+</div>
+<div *ngIf="!book" class="book-detail-container">
+  <p>Book not found.</p>
+  <a routerLink="/books" class="back-link">← Back to Books</a>
+</div>

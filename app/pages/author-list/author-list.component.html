@@ -1,0 +1,13 @@
+<section>
+  <h2>Authors</h2>
+
+  <ul class="list">
+    <li *ngFor="let author of filtered" class="list-item">
+      <div>
+        <a [routerLink]="['/authors', author.id]">{{ author.name }}</a>
+        <a [routerLink]="['/authors', author.id]" class="icon">🔍</a>
+        <div class="meta">{{ author.nationality || 'N/A' }} • Born: {{ author.birthYear || 'N/A' }}</div>
+      </div>
+    </li>
+  </ul>
+</section>

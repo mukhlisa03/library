@@ -1,0 +1,12 @@
+.list {
+  list-style: none;
+  padding: 0;
+}
+.list-item {
+  margin-bottom: 20px;
+}
+.icon {
+  margin-left: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}

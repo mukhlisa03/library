@@ -1,0 +1,9 @@
+<header class="navbar">
+  <div class="container navbar-inner">
+    <nav [class.open]="menuOpen" class="nav-links">
+      <a routerLink="" routerLinkActive="active" (click)="menuOpen=false">Home</a>
+      <a routerLink="/books" routerLinkActive="active" (click)="menuOpen=false">Books</a>
+      <a routerLink="/authors" routerLinkActive="active" (click)="menuOpen=false">Authors</a>
+    </nav>
+  </div>
+</header>

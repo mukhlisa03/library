@@ -1,0 +1,13 @@
+<div class="author-detail-container" *ngIf="author">
+  <a routerLink="/authors" class="back-link">← Back to Authors</a>
+  <h1>{{ author.name }}</h1>
+  <div class="author-info">
+    <div class="info-item">
+      <strong>Bio:</strong> {{ author.bio }}
+    </div>
+  </div>
+</div>
+<div *ngIf="!author" class="author-detail-container">
+  <p>Author not found.</p>
+  <a routerLink="/authors" class="back-link">← Back to Authors</a>
+</div>
