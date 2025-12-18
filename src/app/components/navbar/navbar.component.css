@@ -26,7 +26,7 @@
 }
 
 .navbar-brand:hover {
-  color: #4CAF50;
+  color: blueviolet;
 }
 
 .nav-links {
@@ -51,10 +51,10 @@
 
 .nav-links a:hover {
   background-color: #555;
-  color: #4CAF50;
+  color: blueviolet;
 }
 
 .nav-links a.active {
-  background-color: #4CAF50;
+  background-color: blueviolet;
   color: white;
 }

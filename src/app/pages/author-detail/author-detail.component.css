@@ -7,14 +7,14 @@
 .back-link {
   display: inline-block;
   margin-bottom: 20px;
-  color: #28a745;
+  color: blueviolet;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .back-link:hover {
-  color: #218838;
+  color: blueviolet;
 }
 
 h1 {
